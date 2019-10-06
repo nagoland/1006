@@ -1,5 +1,21 @@
-h1 {
-  color: red;
+#wrapper {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+#wrapper .slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1);
+  transition: all  1s linear, transform 6.5s;
+}
+#wrapper .slide-item.active {
+  opacity: 1;
+}
+#wrapper .slide-item.zoom {
+  transform: scale(1.4);
 }
 
 /*# sourceMappingURL=main.css.map */
